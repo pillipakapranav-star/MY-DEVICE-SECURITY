@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+data/config.json
+data/last_location.json
+data/owner_model.yml
+data/labels.json
+data/owner_faces/*
+!data/owner_faces/.gitkeep
+data/sms_outbox.*
+data/breach_history.json
+captured_intruders/*
+!captured_intruders/.gitkeep
+sounds/*
+!sounds/.gitkeep

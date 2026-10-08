@@ -1,0 +1,6 @@
+# Aegis Sentinel - Python Requirements
+opencv-contrib-python>=4.8.0
+customtkinter>=5.2.0
+pillow>=10.0.0
+pyserial>=3.5
+requests>=2.31.0
