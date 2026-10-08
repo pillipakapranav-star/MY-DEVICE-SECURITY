@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VANDY — Aegis Sentinel | Cyber-Defense & Device Security</title>
+  <meta name="description" content="Aegis Sentinel: Advanced local Windows host security, zero-trust PIN shield, owner biometric facial recognition, and automated forensic breach dispatch.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="cyber-theme">
+  <!-- Cyber Background Grid & Glows -->
+  <div class="cyber-grid" aria-hidden="true"></div>
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="main-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4" stroke-dasharray="10" stroke-dashoffset="0"/>
+          </svg>
+          <span class="pulse-beacon"></span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">VANDY <span class="accent-glow">AEGIS SENTINEL</span></span>
+          <span class="brand-sub">Host Defense & Biometric Shield</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#simulator" class="nav-link">Live Simulator</a>
+        <a href="#biometrics" class="nav-link">Biometric Sentry</a>
+        <a href="#architecture" class="nav-link">Defense Pipeline</a>
+        <a href="#logs" class="nav-link">Incident Logs</a>
+        <a href="https://github.com/pillipakapranav-star/MY-DEVICE-SECURITY" target="_blank" rel="noopener noreferrer" class="btn btn-nav-gh">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub Repository
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span class="badge-text">v2.4.0 ACTIVE DEFENSE PROTOCOL</span>
+        </div>
+        <h1 class="hero-title">
+          Autonomous Host Protection & <span class="gradient-text">Zero-Trust Shield</span>
+        </h1>
+        <p class="hero-subtitle">
+          VANDY Aegis Sentinel safeguards physical workstations using real-time biometric face surveillance, salted PBKDF2 Master PIN authentication, automated forensic burst capture, and emergency multi-channel incident dispatch.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#simulator" class="btn btn-primary" id="btn-test-sim">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            Test Interactive Simulator
+          </a>
+          <a href="#architecture" class="btn btn-secondary">
+            Explore Architecture
+          </a>
+        </div>
+
+        <!-- Telemetry Ribbon -->
+        <div class="telemetry-ribbon" id="telemetry-ribbon">
+          <div class="telemetry-card">
+            <span class="telemetry-label">SECURITY STATUS</span>
+            <span class="telemetry-value text-success" id="telemetry-status">ARMED & VIGILANT</span>
+          </div>
+          <div class="telemetry-card">
+            <span class="telemetry-label">ENCRYPTION SCHEME</span>
+            <span class="telemetry-value">PBKDF2-HMAC-SHA256</span>
+          </div>
+          <div class="telemetry-card">
+            <span class="telemetry-label">BIOMETRIC ENGINE</span>
+            <span class="telemetry-value">OpenCV LBPH Face Recognizer</span>
+          </div>
+          <div class="telemetry-card">
+            <span class="telemetry-label">APPROXIMATE IP AREA</span>
+            <span class="telemetry-value text-cyan" id="telemetry-location">Geo-Locating...</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Security Command Suite -->
+    <section class="simulator-section" id="simulator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">INTERACTIVE TESTBENCH</span>
+          <h2 class="section-title">Live Security Command Suite</h2>
+          <p class="section-desc">Test real defense mechanisms in real-time right in your browser.</p>
+        </div>
+
+        <div class="sim-wrapper">
+          <!-- Control Panel Tabs -->
+          <div class="sim-tabs" role="tablist">
+            <button class="sim-tab active" data-tab="tab-shield" role="tab" id="tab-btn-shield">
+              <span class="tab-icon">🔢</span>
+              <span>Case 1: PIN Shield & 3-Strike Lock</span>
+            </button>
+            <button class="sim-tab" data-tab="tab-sentry" role="tab" id="tab-btn-sentry">
+              <span class="tab-icon">👁️</span>
+              <span>Case 2: Biometric Sentry HUD</span>
+            </button>
+            <button class="sim-tab" data-tab="tab-logs" role="tab" id="tab-btn-logs">
+              <span class="tab-icon">📁</span>
+              <span>Forensic Evidence Vault</span>
+            </button>
+          </div>
+
+          <!-- TAB 1: PIN SHIELD SIMULATOR -->
+          <div class="sim-content active" id="tab-shield" role="tabpanel">
+            <div class="pin-grid">
+              <div class="pin-terminal">
+                <div class="terminal-bar">
+                  <div class="term-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <span class="term-title">AEGIS PIN AUTHENTICATION CONSOLE</span>
+                  <span class="term-badge" id="attempts-badge">3 ATTEMPTS REMAINING</span>
+                </div>
+
+                <div class="terminal-body">
+                  <div class="pin-display">
+                    <div class="pin-dots" id="pin-dots-container">
+                      <span class="pin-dot"></span>
+                      <span class="pin-dot"></span>
+                      <span class="pin-dot"></span>
+                      <span class="pin-dot"></span>
+                    </div>
+                    <span class="pin-hint">Enter Master PIN (Demo Default: <strong>1234</strong>)</span>
+                  </div>
+
+                  <!-- Keypad -->
+                  <div class="keypad-grid">
+                    <button class="key-btn" data-key="1">1</button>
+                    <button class="key-btn" data-key="2">2</button>
+                    <button class="key-btn" data-key="3">3</button>
+                    <button class="key-btn" data-key="4">4</button>
+                    <button class="key-btn" data-key="5">5</button>
+                    <button class="key-btn" data-key="6">6</button>
+                    <button class="key-btn" data-key="7">7</button>
+                    <button class="key-btn" data-key="8">8</button>
+                    <button class="key-btn" data-key="9">9</button>
+                    <button class="key-btn key-clear" id="key-clear">CLR</button>
+                    <button class="key-btn" data-key="0">0</button>
+                    <button class="key-btn key-enter" id="key-enter">ENTER</button>
+                  </div>
+                </div>
+
+                <div class="terminal-footer">
+                  <div class="audit-status" id="pin-status-msg">
+                    Enter credentials to authenticate session.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Defense Protocol Details -->
+              <div class="protocol-card">
+                <h3 class="card-title">Case 1 Protocol Specifications</h3>
+                <ul class="spec-list">
+                  <li>
+                    <div class="spec-bullet">🔒</div>
+                    <div>
+                      <strong>Host Lock Trigger</strong>
+                      <p>Executes Windows Win+L lockdown via <code>LockWorkStation()</code> upon 3 consecutive authentication failures.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="spec-bullet">📸</div>
+                    <div>
+                      <strong>Forensic Photo Burst</strong>
+                      <p>Captures 5 high-resolution forensic camera frames at 200ms intervals without preview window popup.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="spec-bullet">📍</div>
+                    <div>
+                      <strong>Approximate Network IP Area</strong>
+                      <p>Resolves geographic city & ISP coordinates (explicitly labeled as approximate, not GPS).</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="spec-bullet">📡</div>
+                    <div>
+                      <strong>Multi-Channel Emergency Dispatch</strong>
+                      <p>Transmits instant alert via Gmail SMTP & hardware offline GSM modem SMS.</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="action-row">
+                  <button class="btn btn-outline" id="btn-simulate-strike">Simulate 1 Wrong PIN Strike</button>
+                  <button class="btn btn-danger" id="btn-trigger-breach">Trigger 3-Strike Breach</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: BIOMETRIC SENTRY HUD -->
+          <div class="sim-content" id="tab-sentry" role="tabpanel">
+            <div class="sentry-grid">
+              <div class="hud-canvas-container">
+                <canvas id="hud-canvas" width="640" height="400"></canvas>
+                <div class="hud-overlay-ui">
+                  <div class="hud-top">
+                    <span class="hud-tag">CAM 01 // 1080P 30FPS</span>
+                    <span class="hud-tag" id="hud-mode-tag">MODE: CONTINUOUS PATROL</span>
+                  </div>
+                  <div class="hud-bottom">
+                    <span class="hud-tag" id="hud-target-name">TARGET: AUTHORIZED OWNER</span>
+                    <span class="hud-tag text-emerald" id="hud-confidence">CONFIDENCE: 94.8%</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sentry-controls">
+                <h3 class="card-title">Owner Biometric Sentry (Case 2)</h3>
+                <p class="text-muted">
+                  Continuously monitors the workstation webcam for owner presence using Local Binary Patterns Histograms (LBPH). Unknown individuals or missing owner presence flag an alert state.
+                </p>
+
+                <div class="sim-toggle-group">
+                  <label class="toggle-card">
+                    <input type="radio" name="face-mode" value="owner" checked id="radio-owner">
+                    <div class="toggle-content">
+                      <span class="toggle-name">Authorized Owner Present</span>
+                      <span class="toggle-desc">System remains unlocked. Green HUD reticle.</span>
+                    </div>
+                  </label>
+                  <label class="toggle-card">
+                    <input type="radio" name="face-mode" value="unknown" id="radio-unknown">
+                    <div class="toggle-content">
+                      <span class="toggle-name">Unknown Face Detected</span>
+                      <span class="toggle-desc">Triggers intruder alert & forensic burst capture.</span>
+                    </div>
+                  </label>
+                  <label class="toggle-card">
+                    <input type="radio" name="face-mode" value="absent" id="radio-absent">
+                    <div class="toggle-content">
+                      <span class="toggle-name">Owner Left Workstation</span>
+                      <span class="toggle-desc">Host locked after configurable grace period.</span>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="hud-stats-row">
+                  <div class="stat-box">
+                    <span class="stat-num" id="stat-scan-fps">30.2</span>
+                    <span class="stat-lbl">PROCESSING FPS</span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-num" id="stat-faces-count">1</span>
+                    <span class="stat-lbl">FACES IN SIGHT</span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-num text-success" id="stat-threat-level">SECURE</span>
+                    <span class="stat-lbl">THREAT MATRIX</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: FORENSIC LOGS & EVIDENCE VAULT -->
+          <div class="sim-content" id="tab-logs" role="tabpanel">
+            <div class="vault-container">
+              <div class="vault-header">
+                <h3>Forensic Audit Trail & Incident Vault</h3>
+                <button class="btn btn-sm btn-outline" id="btn-clear-logs">Reset Demo Logs</button>
+              </div>
+
+              <div class="table-responsive">
+                <table class="vault-table" id="vault-table">
+                  <thead>
+                    <tr>
+                      <th>Timestamp</th>
+                      <th>Incident Type</th>
+                      <th>Approximate Location</th>
+                      <th>Evidence Burst</th>
+                      <th>Status & Dispatch</th>
+                    </tr>
+                  </thead>
+                  <tbody id="logs-tbody">
+                    <!-- Dynamic Rows populated by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture & Features Section -->
+    <section class="architecture-section" id="architecture">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ENGINEERING OVERVIEW</span>
+          <h2 class="section-title">Zero-Trust Architecture</h2>
+          <p class="section-desc">Every layer operates locally on Windows with zero cloud telemetry dependencies.</p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feat-icon">🛡️</div>
+            <h3 class="feat-title">PBKDF2 Salting & Key Derivation</h3>
+            <p class="feat-desc">
+              All PINs are hashed using PBKDF2 with 100,000 iterations of SHA-256 and unique 16-byte cryptographic salts. Automatic upgrade from legacy single-pass SHA-256 upon verification.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feat-icon">📷</div>
+            <h3 class="feat-title">Stealth 5-Photo Burst</h3>
+            <p class="feat-desc">
+              Upon breach detection, Aegis silently captures 5 consecutive forensic photos at 0.2s intervals to capture movement and facial angles before the intruder reacts.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feat-icon">🌐</div>
+            <h3 class="feat-title">Approximate IP Geolocation</h3>
+            <p class="feat-desc">
+              Public network query estimates city and region coordinates. Clearly labeled as non-GPS network estimates to maintain complete evidentiary integrity.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feat-icon">🔒</div>
+            <h3 class="feat-title">Instant Host Lock (Win+L)</h3>
+            <p class="feat-desc">
+              Direct integration with <code>user32.dll LockWorkStation()</code> secures the Windows session instantly before malicious tampering can occur.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feat-icon">📲</div>
+            <h3 class="feat-title">Offline GSM Hardware SMS</h3>
+            <p class="feat-desc">
+              Sends emergency text alerts over local COM port GSM modems even if internet access is cut, with automatic fallback to offline disk queuing.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feat-icon">📧</div>
+            <h3 class="feat-title">Forensic Gmail SMTP Dispatch</h3>
+            <p class="feat-desc">
+              Multi-part MIME email dispatcher with embedded snapshot attachments, location map links, and incident breakdown sent to the verified owner inbox.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Run Desktop Section -->
+    <section class="run-section" id="run-guide">
+      <div class="container">
+        <div class="guide-box">
+          <div class="guide-content">
+            <h2 class="guide-title">Deploy Locally on Windows</h2>
+            <p class="guide-subtitle">Clone and run the native CustomTkinter desktop defense app in 3 commands:</p>
+
+            <div class="code-terminal">
+              <div class="terminal-header">
+                <span>PowerShell</span>
+                <button class="btn-copy" id="btn-copy-code" title="Copy to clipboard">Copy</button>
+              </div>
+              <pre class="terminal-pre"><code>git clone https://github.com/pillipakapranav-star/MY-DEVICE-SECURITY.git
+cd MY-DEVICE-SECURITY
+python -m pip install -r requirements.txt
+python main.py</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Breach Alert Modal Overlay -->
+  <div class="modal-overlay" id="breach-modal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-icon">⚠️</div>
+        <h3>CRITICAL SECURITY BREACH DETECTED</h3>
+      </div>
+      <div class="modal-body">
+        <p class="text-danger font-bold">Host defense protocol activated. Workstation locked.</p>
+        <div class="breach-summary">
+          <div><strong>Trigger:</strong> <span id="modal-breach-reason">3 Consecutive Failed Master PIN Attempts</span></div>
+          <div><strong>Forensic Bursts:</strong> 5 images captured to disk</div>
+          <div><strong>Dispatch Status:</strong> Email & SMS dispatched</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="btn-dismiss-modal">Acknowledge & Reset State</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>VANDY Aegis Sentinel &bull; Cyber-Defense & Host Protection System</p>
+      <p class="footer-links">
+        <a href="https://github.com/pillipakapranav-star/MY-DEVICE-SECURITY" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
